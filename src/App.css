@@ -1,0 +1,15 @@
+@layer{
+
+#root{@apply
+
+  max-w-7xl
+  m-auto
+  p-8
+  text-center
+
+}
+
+
+
+
+}
