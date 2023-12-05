@@ -1,4 +1,4 @@
-import React, {Children, useContext} from "react"
+import React, {useContext} from "react"
 import useLocalStorage  from "../Hooks/useLocalStorage"
 import {v4 as uuidV4} from "uuid"
 
@@ -21,8 +21,7 @@ export  function useBudgets(){
 
 export const BudgetsProvider = ({children}) => {
  const [budgets, setBudgets] = useLocalStorage( "budgets", [])
-  
-     const [expenses, setExpenses] = useLocalStorage( "expenses", [])
+ const [expenses, setExpenses] = useLocalStorage( "expenses", [])
 
 
     //trouver la depense pour un budget donner à travaers l'identité de ce budget

@@ -21,9 +21,8 @@ export default function Params() {
 
 
   return (
-    <div className='Params drop-shadow-2xl'>
+    <div className='Params'>
 
-         <h1>Budget Finance Flow</h1>
 
          <div className='Paramets'>
             <div>
@@ -37,6 +36,8 @@ export default function Params() {
             </div>
          </div>
 
+         <p>$ 15000</p>
+         <span>your account balance</span>
     </div>
   )
 }
