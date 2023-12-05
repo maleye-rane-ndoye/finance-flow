@@ -1,13 +1,240 @@
 @layer{
 
 #root{@apply
-
-  max-w-7xl
+  w-screen h-screen
   m-auto
-  p-8
   text-center
-
+  overflow-hidden
+ 
 }
+
+    /* App style page*/
+    .App{@apply  
+      w-full
+      h-full
+      flex flex-col
+      overflow-hidden
+      bg-gradient-to-l from-[#0a4597] via-[#779fd6] to-[#2c90c2]
+      
+
+    }
+
+    /* device style component*/
+    .Device{@apply
+      w-full h-6  
+      flex flex-row items-center justify-between p-2
+      text-white
+      xl:hidden
+
+    }
+
+    .Device-left{@apply
+      flex flex-row items-center justify-center space-x-2
+      }
+
+
+    .Device-right{@apply
+    flex flex-row items-center justify-center space-x-2
+    }
+
+
+
+    /* Params style component*/
+
+    .Params{@apply
+    w-full flex flex-col text-white text-start
+    
+    }
+
+    .Params p{@apply
+     text-2xl p-4 text-center m-0
+    }
+
+    .Params span{@apply
+      text-sm font-light p-4 text-center m-0
+     }
+
+
+
+    .Paramets{@apply
+    w-full h-20 text-white flex flex-row justify-between p-4
+    }
+
+    /* NaveBare style Component*/
+
+    .NaveBare{@apply
+      w-full h-24 bg-slate-50 flex flex-row items-center justify-around
+    
+     
+    }
+
+    .NavButton{@apply
+      w-16 h-16 rounded-xl
+      hover:bg-slate-50
+      text-center flex flex-col items-center justify-center
+      transition duration-300 ease-in-out
+      
+    
+      
+      }
+
+      .ActiveLink{@apply
+        w-16 h-16 rounded-xl
+        bg-white
+        text-center flex flex-col items-center justify-center
+        transition duration-500 ease-linear
+      }
+
+
+
+
+
+    .Home{@apply
+      w-full h-full overflow-auto 
+      rounded-tl-3xl rounded-tr-3xl
+      bg-slate-100
+      flex flex-col items-center 
+    }
+
+    /* AddBudget style Component*/
+
+    .AddBudget{@apply
+    
+     w-full h-full overflow-auto 
+      rounded-tl-3xl rounded-tr-3xl
+      bg-slate-100
+      flex flex-col items-center 
+    
+    }
+
+    /* AddTransaction styl Component*/
+
+    .Transaction{@apply
+     w-full h-full overflow-auto 
+      rounded-tl-3xl rounded-tr-3xl
+      bg-slate-100
+      flex flex-col items-center 
+    }
+
+    /* BudgetStats style Component*/
+
+    .BudgetStats{@apply
+     w-full h-full overflow-auto 
+      rounded-tl-3xl rounded-tr-3xl
+      bg-slate-100
+      flex flex-col items-center 
+    
+    }
+    /* SideBarre style component*/
+
+    
+    .sidebar{@apply
+      w-1/2
+      h-screen
+      bg-gradient-to-t from-white via-slate-100 to-white
+      absolute
+      md:w-52
+      xl:w-52
+      rounded-xl
+      start-0
+     
+    }
+
+    /* Profile style component*/
+    .Profile{@apply
+     w-full h-full flex flex-col items-center p-4 space-y-6
+    
+    }
+    .photo{@apply
+    w-4/6 h-52 bg-slate-100 rounded-xl border flex flex-col items-center justify-center
+    }
+
+    .description{@apply
+    w-full h-auto bg-slate-100 rounded-xl
+
+    }
+
+    .details{@apply
+    w-full h-full bg-slate-100 rounded-xl
+    }
+    .photoContente{@apply
+     w-24 h-24 bg-black rounded-full 
+    }
+
+
+    /*Total */
+
+    .Total {@apply
+      w-28 h-12 bg-white
+      m-4 rounded flex flex-row items-center justify-center space-x-3
+
+    }
+
+    .Expense {@apply
+      w-28 h-12 bg-white
+      m-4 rounded flex flex-row items-center justify-center space-x-3
+
+    }
+
+
+    .BudgetCard{@apply
+      w-full h-24 
+      bg-slate-100
+      rounded-xl
+      flex flex-row items-center
+      justify-start
+      space-x-4
+      px-6
+      hover:bg-slate-50
+      max-w-lg
+    }
+    .BudgetCardId{@apply
+     flex flex-col flex-1
+     text-start
+     overflow-hidden
+    
+    }
+
+
+    .ExpenseCard{@apply
+      w-full h-24 
+      bg-slate-100
+      rounded-xl
+      flex flex-row items-center
+      justify-start
+      space-x-4
+      px-6
+      hover:bg-slate-50
+      max-w-lg
+    }
+
+    .ExpenseCardId{@apply
+     flex flex-col flex-1
+     text-start
+     overflow-hidden
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
