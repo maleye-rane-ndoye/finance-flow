@@ -9,7 +9,7 @@ export default function DeviceElements() {
         </div>
         <div className='Device-right'>
               <span className="material-symbols-rounded text-sm">alarm</span>
-              <span class="material-symbols-rounded text-sm">volume_off</span>
+              <span className="material-symbols-rounded text-sm">volume_off</span>
               <span className="material-symbols-rounded text-sm">wifi</span>
               <span className="material-symbols-rounded text-sm">signal_cellular_alt</span>
               <span className="material-symbols-rounded text-sm">battery_5_bar</span>

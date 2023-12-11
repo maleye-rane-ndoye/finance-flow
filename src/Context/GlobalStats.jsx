@@ -6,10 +6,10 @@ import AppReducer from "./AppReducer";
 
 const initialState = {
     transaction:[
-        {id: 1, text: 'Food' ,Amount: -20},
+        {id: 1, text: 'Food' ,Amount: -2000},
         {id: 2, text: 'Salary' ,Amount: 1000},
-        {id: 3, text: 'Cinema' ,Amount: -10},
-        {id: 4, text: 'Rent' ,Amount: 300},
+        {id: 3, text: 'Cinema' ,Amount: -1000},
+        {id: 4, text: 'Rent' ,Amount: 3000},
 
     ]
 }
