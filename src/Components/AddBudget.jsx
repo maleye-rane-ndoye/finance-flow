@@ -5,7 +5,10 @@ export default function AddBudget() {
     <>
       <Params/>
     <div className='AddBudget'>
-            this is the budget page list and formular add budget
+           <form action="">
+            <label htmlFor="">Name</label>
+            <input type="text" />
+           </form>
     </div>
     </>
   )

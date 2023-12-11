@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
-import { BudgetsProvider } from './Context/BudgetsContext.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import { GlobalProvider } from './Context/GlobalStats.jsx'
+import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BudgetsProvider>
       <BrowserRouter>
-       <App/>
+      <GlobalProvider>
+         <App/>
+       </GlobalProvider>
      </BrowserRouter>
-    </BudgetsProvider>
   </React.StrictMode>,
 )

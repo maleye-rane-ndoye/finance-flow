@@ -165,19 +165,19 @@
     /*Total */
 
     .Total {@apply
-      w-28 h-12 bg-white
+      w-28 h-12 bg-slate-50
       m-4 rounded flex flex-row items-center justify-center space-x-3
-
+      hover:bg-white
     }
 
     .Expense {@apply
-      w-28 h-12 bg-white
+      w-28 h-12 bg-slate-50
       m-4 rounded flex flex-row items-center justify-center space-x-3
-
+      hover:bg-white
     }
 
 
-    .BudgetCard{@apply
+    .TransactionList{@apply
       w-full h-24 
       bg-slate-100
       rounded-xl
@@ -188,44 +188,57 @@
       hover:bg-slate-50
       max-w-lg
     }
-    .BudgetCardId{@apply
+    .transaction{@apply
      flex flex-col flex-1
      text-start
      overflow-hidden
     
     }
 
+    .Container{@apply
+     w-full h-20 flex flex-col items-center justify-center
+    }
 
-    .ExpenseCard{@apply
-      w-full h-24 
-      bg-slate-100
+    .Container h1{@apply
+     text-white  font-semibold
+    }
+
+    .AddTransaction{@apply
+      w-full h-auto
+      space-y-5
+      border-spacing-3
+      p-6
+      my-4
       rounded-xl
-      flex flex-row items-center
-      justify-start
-      space-x-4
-      px-6
-      hover:bg-slate-50
+      flex flex-col items-center
+      justify-center
+      bg-slate-50
       max-w-lg
-    }
-
-    .ExpenseCardId{@apply
-     flex flex-col flex-1
-     text-start
-     overflow-hidden
     
     }
 
+    .form{@apply
+      w-full h-auto 
+      bg-slate-100
+      p-6
+      rounded-xl
+      flex flex-col items-center
+      justify-center
+      space-y-6
+      
+    }
 
-
-
-
-
-
-
-
-
-
-
+    .form-control{@apply
+      flex flex-col
+      items-start
+      text-start
+    }
+    
+    .btn{@apply
+    w-full
+    bg-blue-300
+    
+    }
 
 
 

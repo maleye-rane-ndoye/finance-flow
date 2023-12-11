@@ -2,7 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import SideBarre from './SideBarre'
 import { NavLink } from 'react-router-dom'
-
+import Balance from './Balance'
 export default function Params() {
 
   const[sidebare, setSidebare] = useState(false)
@@ -35,9 +35,7 @@ export default function Params() {
                   <NavLink to='/profile'><span  className="material-symbols-rounded cursor-pointer ">person</span></NavLink>
             </div>
          </div>
-
-         <p>$ 15000</p>
-         <span>your account balance</span>
+         <Balance/>
     </div>
   )
 }
