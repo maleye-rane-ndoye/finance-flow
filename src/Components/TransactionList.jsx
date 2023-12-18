@@ -5,14 +5,14 @@ import {Transaction} from './Transaction'
 
 export default function TransactionList() {
 
-  const { transaction } = useContext(GlobalContext)
+  const { transactions } = useContext(GlobalContext)
 
 
 
 
   return (
     <ul>
-      {transaction.map(transaction => (<Transaction key={transaction.id} transaction={transaction}/>))}
+      {transactions.map(transaction => (<Transaction key={transaction.id} transaction={transaction}/>))}
           
     </ul>
    
