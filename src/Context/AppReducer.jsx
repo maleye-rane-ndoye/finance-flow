@@ -9,6 +9,11 @@ export default (state, action) => {
                 transactions: state.transactions.filter(transaction => transaction.id !== action.payload)
 
             }
+        case 'DELETE_BUDGET':
+            return{
+                ...state,
+                budgets: state.budgets.filter(budget => budget.id !== action.payload)
+            }    
         case 'ADD_TRANSACTION':
             return{
                 ...state,

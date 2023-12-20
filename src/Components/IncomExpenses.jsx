@@ -6,7 +6,7 @@ export default function IncomExpenses() {
 
 
   const { transactions } = useContext(GlobalContext)
-  const amouts = transactions.map(transaction => transaction.Amount)
+  const amouts = transactions.map(transaction => transaction.amount)
 
 
   const income = amouts

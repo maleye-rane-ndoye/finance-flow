@@ -6,10 +6,18 @@ import AppReducer from "./AppReducer";
 
 const initialState = {
     transactions:[
-        {id: 1, text: 'Food' ,Amount: -2000},
-        {id: 2, text: 'Salary' ,Amount: 1000},
-        {id: 3, text: 'Cinema' ,Amount: -1000},
-        {id: 4, text: 'Rent' ,Amount: 3000},
+        {id: 1, text: 'meet' ,amount: -8000},
+        {id: 2, text: 'Diesel' ,amount: 1000},
+        {id: 3, text: 'chooses' ,amount: -1000},
+        {id: 4, text: 'Rent' ,amount: 3000},
+
+    ],
+
+    budgets:[
+        {id:1, category: 'Alimentation',transaction:"8", Date:"19/12/2023"},
+        {id:2, category: 'Care gaz',transaction:"5", Date:"20/12/2023"},
+        {id:3, category: 'Shopping',transaction:"2", Date:"23/12/2023"},
+        {id:4, category: 'House rent',transaction:"6", Date:"25/12/2023"},
 
     ]
 }
@@ -30,6 +38,12 @@ export const GlobalProvider = ({children}) => {
                 payload: id
             });
         }
+        function deleteBudget(id){
+            dispatch({
+                type: 'DELETE_BUDGET',
+                payload: id
+            });
+        }
 
         function addTransaction(transaction){
             dispatch({
@@ -42,8 +56,9 @@ export const GlobalProvider = ({children}) => {
             <GlobalContext.Provider value={{
                 transactions: state.transactions,
                 deleteTransaction,
-                addTransaction
-
+                addTransaction,
+                budgets: state.budgets,
+                deleteBudget,
                 
                 }}>
                 {children}

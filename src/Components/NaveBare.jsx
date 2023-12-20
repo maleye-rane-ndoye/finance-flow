@@ -7,7 +7,7 @@ export default function NaveBare() {
         <NavLink to="/" className = {({isActive})=>(isActive ? "ActiveLink" : "NavButton drop-shadow-2xl")}>
         <div >
             <span className="material-symbols-rounded">wallet</span>
-            <p>Wallet</p>   
+            <p className='text-sm'>Wallet</p>   
         </div>
         </NavLink>
 
@@ -15,21 +15,21 @@ export default function NaveBare() {
         <NavLink to="/addBudget" className = {({isActive})=>(isActive ? "ActiveLink" : "NavButton drop-shadow-2xl")}>
         <div>
              <span className="material-symbols-rounded">content_copy</span>
-             <p>Budgets</p>
+             <p className=' text-sm'>Budgets</p>
         </div>
         </NavLink>
 
         <NavLink to="/addTransaction" className = {({isActive})=>(isActive ? "ActiveLink" : "NavButton drop-shadow-2xl")}>
         <div>
              <span className="material-symbols-rounded">paid</span>
-             <p>Expense</p>
+             <p className=' text-sm'>Transactions</p>
         </div>
         </NavLink>
         
         <NavLink to="/budgetStats" className = {({isActive})=>(isActive ? "ActiveLink" : "NavButton drop-shadow-2xl")}>
         <div>
              <span className="material-symbols-rounded">query_stats</span>
-             <p>Stats</p>
+             <p className='text-sm'>Stats</p>
         </div>
         </NavLink>
         

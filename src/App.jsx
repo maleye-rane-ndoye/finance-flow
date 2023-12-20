@@ -5,7 +5,6 @@ import DeviceElements from './Components/DeviceElements'
 import AddTransaction from './Components/AddTransaction'
 import BudgetStats from './Components/BudgetStats'
 import Profile from './Components/Profile'
-import TransactionList from './Components/TransactionList'
 import AddBudget from './Components/AddBudget'
 import './App.css'
 

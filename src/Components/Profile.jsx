@@ -5,13 +5,7 @@ import React from 'react'
     {id:2, name:"Informations",},
     {id:3, name:"Notifications",},
     {id:4, name:"Privacy",},
-    {id:5, name:"files",},
-  ,
-
-    
-
-
-
+    {id:5, name:"files",}
   ]
 
 

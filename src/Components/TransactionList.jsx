@@ -7,9 +7,6 @@ export default function TransactionList() {
 
   const { transactions } = useContext(GlobalContext)
 
-
-
-
   return (
     <ul>
       {transactions.map(transaction => (<Transaction key={transaction.id} transaction={transaction}/>))}

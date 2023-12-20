@@ -112,7 +112,7 @@
     /* AddTransaction styl Component*/
 
     .Transaction{@apply
-     w-full h-full overflow-auto 
+     w-full h-full  
       rounded-tl-3xl rounded-tr-3xl
       bg-slate-100
       flex flex-col items-center 
@@ -220,8 +220,8 @@
       p-6
       rounded-tl-3xl rounded-tr-3xl
       flex flex-col items-center
-      justify-center
-      bg-slate-50
+      bg-slate-100
+      overflow-auto
     
     }
 
@@ -261,6 +261,17 @@
     }
 
 
+
+    .BudgetList{@apply
+      w-full h-24 
+      bg-slate-100
+      rounded-xl
+      flex flex-row items-center
+      space-x-4
+      px-6
+      hover:bg-slate-50
+      max-w-lg
+    }
 
 
 }

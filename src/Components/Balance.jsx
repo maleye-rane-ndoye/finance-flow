@@ -8,7 +8,7 @@ const Balance = () => {
   const { transactions } = useContext(GlobalContext)
 
   
-  const amouts = transactions.map(transaction => transaction.Amount)
+  const amouts = transactions.map(transaction => transaction.amount)
   const total = amouts.reduce((acc, item) => (acc += item), 0).toFixed(2)
 
   return (
