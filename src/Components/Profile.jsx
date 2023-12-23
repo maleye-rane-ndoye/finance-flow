@@ -28,7 +28,7 @@ export default function Profile() {
 
                         <div className='boxProfile  hover:drop-shadow-2xl' key={mapItem.id}>
                             <p>{mapItem.name}</p>
-                            <span class="material-symbols-rounded hover:text-blue-300 text-lg">chevron_right</span>
+                            <span className="material-symbols-rounded hover:text-blue-300 text-lg">chevron_right</span>
                         </div>
 
                   );
